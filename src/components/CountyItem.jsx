@@ -19,20 +19,20 @@ export class CountyItem extends Component {
         }
         return (
             <div className={`col-lg-4 mt-3 ${klasaNone}`}>
-            <div className={`card border-${klasa} mb-3`} >
-                <div className="card-header">Info Covid-19</div>
-                <div className={`card-body text-${klasa}`}>
-                    <h5 className="card-title">{country}</h5>
-                    <p className="card-text">Cases: {cases}</p>
-                    <p className="card-text">Today Cases: {todayCases}</p>
-                    <p className="card-text">Deaths: {deaths}</p>
-                    <p className="card-text">Today Deaths: {todayDeaths}</p>
-                    <p className="card-text">Today Deaths: {todayDeaths}</p>
-                    <p className="card-text">Recovered: {recovered}</p>
-                    <p className="card-text">Total Tested: {totalTests}</p>
-                </div>
-                <div className={`card-footer bg-transparent border-${klasa}`}>Active Now: {active}</div>
-            </div>
+                
+                    <div className={`card border-${klasa} mb-3 card-wrapper`} >
+                    <div className="card-header card-custom-header">{country}</div>
+                    <div className={`card-body text-${klasa}`}>
+                        <p className="card-text card-text-custom">Cases: <span className="cov-podatak">{cases}</span></p>
+                        <p className="card-text card-text-custom">Today Cases: <span className="cov-podatak">{todayCases}</span></p>
+                        <p className="card-text card-text-custom">Deaths: <span className="cov-podatak">{deaths}</span></p>
+                        <p className="card-text card-text-custom">Today Deaths: <span className="cov-podatak">{todayDeaths}</span></p>
+                        <p className="card-text card-text-custom">Recovered: <span className="cov-podatak">{recovered}</span></p>
+                        <p className="card-text card-text-custom">Total Tested: <span className="cov-podatak">{totalTests}</span></p>
+                    </div>
+                    <div className={`card-footer card-custom-footer border-${klasa}`}></div>
+                    </div>
+                
             </div>
         )
     }

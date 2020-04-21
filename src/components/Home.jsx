@@ -36,7 +36,7 @@ export class Home extends Component {
                 </div>
             )
         }
-        return <Spinner animation="border" />
+        return <div className="text-center"><Spinner animation="border" /></div>
     }
 }
 

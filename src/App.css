@@ -1,10 +1,46 @@
+.main-container{
+  background-color: #131217;
+}
 .nav-links{
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
+  color: white;
+  transition: all ease-in-out .2s;
 }
 .nav-links:hover{
   text-decoration: none;
+  color: #a5a5a5;
 }
 .none-display{
   display: none;
+}
+.cov-naslov{
+  font-size: 50px;
+  font-weight: 700;
+
+}
+.cov-podatak{
+  float: right;
+}
+.card-wrapper{
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+}
+.cov-navbar-container{
+  background-color: #351f65;
+  justify-content: space-between;
+}
+.card-custom-header{
+  background-color: #663399;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.card-text-custom{
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.card-custom-footer{
+  background-color: #452475;
 }
